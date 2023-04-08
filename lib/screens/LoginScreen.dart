@@ -1,3 +1,4 @@
+import 'package:demopro/screens/HomeScreen.dart';
 import 'package:demopro/screens/SignUpScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -75,6 +76,7 @@ class _LoginPageState extends State<LoginScreen> {
                     padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                     child: ElevatedButton(
                         onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => const MyHomePage(title: "Home")));
                           print("Login Pressed");
                         },
                         style: const ButtonStyle(
