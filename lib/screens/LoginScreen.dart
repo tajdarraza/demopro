@@ -1,3 +1,4 @@
+import 'package:demopro/screens/SignUpScreen.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -92,6 +93,7 @@ class _LoginPageState extends State<LoginScreen> {
                         style: TextStyle(fontSize: 20, color: Colors.teal),
                       ),
                       onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const SignUpScreen(title: "Sign Up")));
                         print("Sign up Pressed");
                       },
                     )
